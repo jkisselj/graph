@@ -1,5 +1,5 @@
-body{
-    background-color: #1a1b3c;
+body {
+    background-color: #f5f5f5; 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,233 +7,171 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-
-
+    color: #333; 
 }
 
-.skillsContainer{
-
+.skillsContainer {
     grid-column-start: 4;
     grid-row-start: 1;
-    background: #230237;
+    background: #d6e2f0; 
     border-radius: 10px;
-    width: 800px;
-    padding: 15px;
-    color: white;
-    height: 400px;
+    width: 750px; 
+    padding: 20px;
+    color: #333; 
+    height: 380px; 
     display: flex;
     align-items: center;
     grid-column-end: -1;
-    box-shadow:
-    0 0 10px rgba(123, 31, 204, 0.7),
-    0 0 20px rgba(123, 31, 204, 0.7),
-    0 0 30px rgba(123, 31, 204, 0.7),
-    0 0 40px rgba(123, 31, 204, 0.7),
-    0 0 50px rgba(123, 31, 204, 0.7),
-    0 0 60px rgba(123, 31, 204, 0.7);
-  transition: box-shadow 0.3s ease-in-out;
-
+    box-shadow: 0 0 10px rgba(120, 150, 180, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.skills-container{
-    width: 400px;
-    height: 450px;
-
+.skills-container {
+    width: 380px; 
+    height: 420px; 
 }
 
-.skillsText{
+.skillsText {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-size: 25px;
-    margin-left: 80px;
-
+    font-size: 24px; 
+    margin-left: 70px;
 }
 
-.projectsGraph{
-
+.projectsGraph {
     grid-column-start: 4;
     grid-row-start: 3;
-    background: #230237;
+    background: #e8dae0; 
     border-radius: 10px;
-
-    width: 800px;
-    height: 400px;
-    padding: 15px;
-    color: white;
+    width: 750px; 
+    height: 380px; 
+    padding: 20px;
+    color: #333;
     grid-column-end: -1;
-
-    box-shadow:
-    0 0 10px rgba(123, 31, 204, 0.7),
-    0 0 20px rgba(123, 31, 204, 0.7),
-    0 0 30px rgba(123, 31, 204, 0.7),
-    0 0 40px rgba(123, 31, 204, 0.7),
-    0 0 50px rgba(123, 31, 204, 0.7),
-    0 0 60px rgba(123, 31, 204, 0.7);
-  transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(120, 150, 180, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.bar{
-   fill: #944dd1;
-   cursor: pointer;
+.bar {
+    fill: #caa4d0; 
+    cursor: pointer;
 }
 
 .SignInForm {
-    background-color: #cc731fc9;
-    width: 300px;
-    height: 400px;
+    background-color: #e2b8c0; 
+    width: 280px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     border-radius: 5px;
     padding-top: 5rem;
-    box-shadow:
-      0 0 10px rgba(123, 31, 204, 0.7),
-
-
-      0 0 40px rgba(44, 6, 76, 0.7),
-      0 0 50px rgba(123, 31, 204, 0.7),
-      0 0 60px rgba(123, 31, 204, 0.7);
+    box-shadow: 0 0 10px rgba(120, 150, 180, 0.3);
     transition: box-shadow 0.3s ease-in-out;
-  }
-
-
-.SignInForm input{
-height: 30px;
-width: 80%;
-margin-bottom: 20px;
-border-radius: 10px;
-border: transparent;
-padding-left: 10px;
-box-shadow:
-0 0 10px rgba(123, 31, 204, 0.7),
-0 0 20px rgba(123, 31, 204, 0.7),
-0 0 30px rgba(123, 31, 204, 0.7),
-0 0 40px rgba(123, 31, 204, 0.7),
-0 0 50px rgba(123, 31, 204, 0.7),
-0 0 60px rgba(123, 31, 204, 0.7);
-transition: box-shadow 0.3s ease-in
 }
 
-
-.SignInForm input:focus{
-outline :none;
+.SignInForm input {
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
 }
 
-
-.SignInForm button{
-height: 30px;
-margin-top: 5rem;
-width: 80%;
-border: transparent;
-border-radius: 5px;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-
+.SignInForm input:focus {
+    outline: none;
 }
 
+.SignInForm button {
+    height: 30px;
+    margin-top: 5rem;
+    width: 80%;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
 
-.SignInForm button:hover{
+.SignInForm button:hover {
     transform: translateY(-4px);
+}
 
-    }
+.loginErr {
+    font-size: 18px;
+    color: #e63946; 
+}
 
-    .loginErr{
-        font-size: 18px;
-        color: rgb(239, 9, 9);
-    }
+.signInWrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
-    .signInWrapper{
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    }
+.infoWrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 2rem 8rem;
+}
 
-    .infoWrapper{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding: 2rem 8rem;
-    }
+.userInfoWrapper {
+    background: #d6e2f0;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 4;
+    margin-right: 2.5rem;
+    grid-row-end: 4;
+    padding: 25px;
+    color: #333;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(120, 150, 180, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
 
-    .userInfoWrapper{
-        background: #230237;
-        border-radius: 10px;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-column-end: 4;
-        margin-right: 2.5rem;
-        grid-row-end: 4;
-        padding: 25px;
-        color: white;
-        font-size: 25px;
+.userInfoWrapper div {
+    margin-top: 10px;
+}
 
-        box-shadow:
-        0 0 10px rgba(123, 31, 204, 0.7),
-        0 0 20px rgba(123, 31, 204, 0.7),
-        0 0 30px rgba(123, 31, 204, 0.7),
-        0 0 40px rgba(123, 31, 204, 0.7),
-        0 0 50px rgba(123, 31, 204, 0.7),
-        0 0 60px rgba(123, 31, 204, 0.7);
-      transition: box-shadow 0.3s ease-in-out;
-    }
+.projectsDiv {
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 550px; 
+}
 
-    .userInfoWrapper div{
-        margin-top: 10px;
-    }
+.projectContainer {
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
 
-    .projectsDiv{
-        border-radius: 10px;
-        overflow: auto;
-        max-height: 600px;
+.logoutBtn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    border: transparent;
+    padding: 6px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    background-color: #e2b8c0; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(120, 150, 180, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
 
-    }
+.logoutBtn:hover {
+    box-shadow: none;
+}
 
-    .projectsDiv::-webkit-scrollbar {
-        display: none;
-    }
-
-
-    .projectContainer{
-        font-size: 18px;
-        border: 1px solid white;
-        border-radius: 10px;
-        padding: 10px;
-    }
-
-    .logoutBtn{
-        position: absolute;
-        top: 10px;
-        right: 30px;
-        border: transparent;
-
-        padding: 6px;
-        font-size: 14px;
-        color: white;
-
-        cursor: pointer;
-        background-color: rgb(30, 3, 53);
-        border-radius: 10px;
-
-        box-shadow:
-        0 0 10px rgba(123, 31, 204, 0.7),
-        0 0 20px rgba(123, 31, 204, 0.7),
-        0 0 30px rgba(123, 31, 204, 0.7),
-        0 0 40px rgba(123, 31, 204, 0.7),
-        0 0 50px rgba(123, 31, 204, 0.7),
-        0 0 60px rgba(123, 31, 204, 0.7);
-      transition: box-shadow 0.3s ease-in-out;
-    }
-
-    .logoutBtn:hover{
-        box-shadow:none
-    }
-
-    .graphHeader h2{
-        margin: 0;
-    }
+.graphHeader h2 {
+    margin: 0;
+}
